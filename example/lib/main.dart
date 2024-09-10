@@ -1,3 +1,4 @@
+import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:date_convert_helper/date_convert_helper.dart';
 import 'package:flutter/material.dart';
 
@@ -18,7 +19,14 @@ class Example extends StatefulWidget {
 }
 
 class _ExampleState extends State<Example> {
+  /// -------- activity time helper --------------
   String activityTimeHelperExample = ActivityTimeHelper.userOnlineActivity("2024-09-10T18:46:26.266");
+  
+  /// -------- timestamp date helper ------------
+  final timestamp = TimeStampDateHelper.formatTimestampDateTime(
+    time: Timestamp.now(),
+    formatPattern: "E"
+  );
 
   @override
   Widget build(BuildContext context) {
@@ -31,10 +39,29 @@ class _ExampleState extends State<Example> {
             crossAxisAlignment: CrossAxisAlignment.center,
             mainAxisAlignment: MainAxisAlignment.center,
             children: [
+              /// ---------- activity time helper example text widget
               Text(
-                activityTimeHelperExample,
+                "Activity Time Helper example: $activityTimeHelperExample",
                 textAlign: TextAlign.center,
-              )
+                style: const TextStyle(
+                  color: Colors.green,
+                  fontWeight: FontWeight.w600,
+                  fontSize: 20
+                ),
+              ),
+              const SizedBox(height: 12),
+              
+              /// ---------- time stamp date helper example text widget
+              Text(
+                "Timestamp Date Helper example: $timestamp",
+                textAlign: TextAlign.center,
+                style: const TextStyle(
+                    color: Colors.green,
+                    fontWeight: FontWeight.w600,
+                    fontSize: 20
+                ),
+              ),
+              const SizedBox(height: 12),
             ],
           ),
         ),
