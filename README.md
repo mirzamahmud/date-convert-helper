@@ -1,39 +1,22 @@
-<!--
-This README describes the package. If you publish this package to pub.dev,
-this README's contents appear on the landing page for your package.
+![logo-ezgif com-resize](https://github.com/user-attachments/assets/c4701ed7-016a-460a-bb3a-5e3ad3a4d21b)
 
-For information about how to write a good package README, see the guide for
-[writing package pages](https://dart.dev/tools/pub/writing-package-pages).
+## About Package
 
-For general information about developing packages, see the Dart guide for
-[creating packages](https://dart.dev/guides/libraries/create-packages)
-and the Flutter guide for
-[developing packages and plugins](https://flutter.dev/to/develop-packages).
--->
-
-TODO: Put a short description of the package here that helps potential users
-know whether this package might be useful for them.
+Date Convert Helper, this package will provide you to convert any DateTime data at your desire date format.
 
 ## Features
-
-TODO: List what your package can do. Maybe include images, gifs, or videos.
+Working on Documentation...
 
 ## Getting started
-
-TODO: List prerequisites and provide or point to information on how to
-start using the package.
+Working on Documentation...
 
 ## Usage
-
-TODO: Include short and useful examples for package users. Add longer examples
-to `/example` folder.
+Working on Documentation...
 
 ```dart
-const like = 'sample';
+/// Working on Documentation
 ```
 
 ## Additional information
 
-TODO: Tell users more about the package: where to find more information, how to
-contribute to the package, how to file issues, what response they can expect
-from the package authors, and more.
+This package is built on "intl" and "cloud_firestore". When we use "date_convert_helper" package than we also use those packages.
