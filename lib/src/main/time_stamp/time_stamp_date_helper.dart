@@ -4,10 +4,9 @@ import 'package:intl/intl.dart';
 class TimeStampDateHelper{
 
   static String formatTimestampDateTime({
-    String? locale,
     String? formatPattern,
     required Timestamp time
   }){
-    return DateFormat(formatPattern, locale).format(time.toDate());
+    return DateFormat(formatPattern).format(time.toDate());
   }
 }
