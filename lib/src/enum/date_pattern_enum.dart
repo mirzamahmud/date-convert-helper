@@ -1,4 +1,0 @@
-enum DatePatternEnum{
-  withDash,
-  withSlash,
-}
